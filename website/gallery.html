@@ -3,12 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gallery Scroll Fade</title>
+  <title> OUR GALLERY</title>
 
-  <!-- ✅ Bootstrap CSS -->
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <style>
+     body {
+    background-image: url(pictures/home\ page\ 2.jpg);
+    background-image: co;
+  }
+
+  .logo-img {
+    height: 60px;
+    width: auto; 
+  }
     .card-img-top {
       height: 200px;
       object-fit: cover;
@@ -17,7 +26,7 @@
       .card-img-top {
   height: 200px;
   object-fit: cover;
-  object-position: center center; /* <- This line ensures center of image is shown */}
+  object-position: center center; /}
 
 
     
@@ -35,12 +44,57 @@
   </style>
 </head>
 <body>
+  <div class="navbar">
+            <nav
+                class="navbar navbar-expand-sm navbar-light "
+            >
+                <div class="container">
+                    <div class="logo">
+                    <a class="navbar-brand" href="#"><img src="pictures/logo-removebg-preview.png" alt="Logo" class="logo-img"></a>
+</div>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="home.html" 
+                                    >Home
+                                    </a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">our gallery</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="contactus.html">contact us at</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="about.html" aria-current="page">about us <span class="visually-hidden">(current)</span></a>
+                            </li>
+                           
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+            
+        </div>
   <div class="container py-5">
     <h2 class="text-center mb-5">Scroll Fade Gallery</h2>
     <div class="row g-4">
 
-      <!-- ✅ 20 Individual Cards Below -->
-      <!-- Replace images/img1.jpg with your own images -->
+      
+      
 
       <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img1.jpg" target="_blank"><img src="pictures/cruise ship 2.jpg" class="card-img-top" alt="Image 1"></a></div></div>
       <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img2.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 2"></a></div></div>
@@ -65,10 +119,10 @@
     </div>
   </div>
 
-  <!-- ✅ Bootstrap JS -->
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- ✅ Scroll fade animation -->
+ 
   <script>
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
