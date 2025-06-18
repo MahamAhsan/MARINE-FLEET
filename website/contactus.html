@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    @media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  input, textarea, button {
+    font-size: 14px;
+  }
+}
+
+    
+    body {
+        background-image: url(pictures/pexels-pixelcop-1554663.jpg);
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        background-color:#005b69;
+        margin: 0;
+        padding: 0;
+    }
+        
+    .container {
+  width: 90%;
+  max-width: 700px;
+  margin: 60px auto;
+ background-color:#005b69;
+  color:#005b69;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: solid;
+  
+}
+
+
+    h2 {
+    color:black;
+
+
+        font-size: xx-large;
+        font-weight: bold;
+      text-align: center;
+      
+    }
+
+    form {
+   
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #f1f4f7;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color:#005b69;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #f1f4f7;
+    }
+
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+    
+
+    .success {
+      color: green;
+      font-size: 16px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>.
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <span id="error" class="error"></span>
+      <button type="submit">Send Message</button>
+      <div id="success" class="success"></div>
+    </form>
+  </div>
+  <div style="margin-top: 20px;">
+  <a href="https://facebook.com" target="_blank">Facebook</a> |
+  <a href="https://instagram.com" target="_blank">Instagram</a> |
+  <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+</div>
+<iframe 
+  src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAP_EMBED_LINK"
+  width="100%" 
+  height="300" 
+  style="border:0; margin-top: 30px;" 
+  allowfullscreen="" 
+  loading="lazy">
+</iframe>
+
+
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const error = document.getElementById('error');
+      const success = document.getElementById('success');
+
+      error.textContent = '';
+      success.textContent = '';
+
+      if (!name || !email || !message) {
+        error.textContent = 'Please fill out all fields.';
+        return;
+      }
+
+      // Example validation
+      if (!email.includes('@') || !email.includes('.')) {
+        error.textContent = 'Please enter a valid email address.';
+        return;
+      }
+
+      // Simulate success message
+      success.textContent = 'Thank you! Your message has been sent.';
+
+      // Optionally clear form
+      document.getElementById('contactForm').reset();
+    });
+
+
+  </script>
+</body>
+</html>
+
