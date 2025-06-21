@@ -19,16 +19,11 @@
     width: auto; 
   }
     .card-img-top {
-      height: 200px;
+      height: 90px;
       object-fit: cover;
       object-position: center center;}
 
-      .card-img-top {
-  height: 200px;
-  object-fit: cover;
-  object-position: center center; /}
-
-
+      
     
 
     .card {
@@ -44,57 +39,75 @@
   </style>
 </head>
 <body>
-  <div class="navbar">
-            <nav
-                class="navbar navbar-expand-sm navbar-light "
+ <nav
+  class="navbar navbar-expand-sm navbar-light "
+ >
+  <div class="container">
+    <a class="navbar-brand  " href="#"><img class="card-img-top" src="pictures copy/logo-removebg-preview.png" alt=""></a>
+    <button
+      class="navbar-toggler d-lg-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" aria-current="page"
+            >Home
+            <span class="visually-hidden">(current)</span></a
+          >
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">gallery section</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">contact us at</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><button>login</button></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#"><button>sign in</button></a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="dropdownId"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >more</a
+          >
+          <div
+            class="dropdown-menu"
+            aria-labelledby="dropdownId"
+          >
+            <a class="dropdown-item" href="#"
+              >feed back</a
             >
-                <div class="container">
-                    <div class="logo">
-                    <a class="navbar-brand" href="#"><img src="pictures/logo-removebg-preview.png" alt="Logo" class="logo-img"></a>
-</div>
-                    <button
-                        class="navbar-toggler d-lg-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId"
-                        aria-controls="collapsibleNavId"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="home.html" 
-                                    >Home
-                                    </a>
-                                    <a class="nav-link active" href="login.html" 
-                                    >sign up
-                                    </a>
-                                    <a class="nav-link active" href="signup.html" 
-                                    >sign in
-                                    </a>
-                                    
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">our gallery</a>
-                            </li>
-                             <li class="nav-item">
-                                <a class="nav-link" href="contactus.html">contact us at</a>
-                            </li>
-                             <li class="nav-item">
-                                <a class="nav-link" href="about.html" aria-current="page">about us <span class="visually-hidden">(current)</span></a>
-                            </li>
-                           
-                            </li>
-                        </ul>
-                       
-                    </div>
-                </div>
-            </nav>
-            
-        </div>
+            <a class="dropdown-item" href="#"
+              >blogs</a
+            >
+          </div>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+ </nav>
+ 
   <div class="container py-5">
     <h2 class="text-center mb-5">Scroll Fade Gallery</h2>
     <div class="row g-4">

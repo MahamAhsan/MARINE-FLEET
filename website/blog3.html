@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Family Getaways by Boat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .main-title {
+      text-align: center;
+      margin: 50px 0 20px;
+      font-size: 2.8rem;
+      color: #01579b;
+      animation: fadeInSlide 2s ease forwards;
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #004d40;
+      margin-bottom: 40px;
+      animation: fadeInSlide 2.5s ease forwards;
+    }
+
+    .boat-img {
+       width: 50%;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      animation: floatImage 5s ease-in-out infinite;
+    }
+
+    .blog-card {
+      background: #ffffff;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 50px;
+      animation: fadeInSlide 3s ease forwards, pulseScale 6s ease-in-out infinite;
+      /* Added pulseScale animation */
+    }
+
+    @keyframes fadeInSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatImage {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes pulseScale {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.03);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Title and Intro -->
+    <h1 class="main-title">Family Getaways by Boat</h1>
+    <p class="intro-text">Reimagine quality time together—on the water, under the sun, and surrounded by nature.</p>
+
+    <!-- Image -->
+    <div class="text-center">
+      <img src="images/family2.jpeg" 
+           alt="Family Boat Trip" class="boat-img">
+    </div>
+
+    <!-- Blog Content -->
+    <div class="blog-card">
+      <h3>Unplug and Reconnect</h3>
+      <p>
+        In today’s fast-paced world, a boat getaway offers families the perfect opportunity to unplug from digital distractions and reconnect with each other. Imagine sunrises over calm waters, laughter echoing across the waves, and shared adventures around every corner.
+      </p>
+
+      <h4>Why Choose a Boat Trip?</h4>
+      <ul>
+        <li>🏖️ Visit multiple destinations in one journey</li>
+        <li>🧭 Learn teamwork while sailing together</li>
+        <li>🌅 Enjoy uninterrupted views and peaceful nights</li>
+        <li>🐚 Explore islands, beaches, and marine life hands-on</li>
+      </ul>
+
+      <h4>Kid-Friendly Fun</h4>
+      <p>
+        From snorkeling in shallow coves to fishing and kayaking, children love the freedom and excitement of being on the water. With plenty of onboard games, meals under the sky, and even stargazing, they’ll never ask for WiFi again!
+      </p>
+
+      <h4>Plan the Perfect Family Voyage</h4>
+      <p>
+        Whether it’s a weekend escape or a week-long journey, our expert team helps you plan routes, meals, safety, and activities. We offer packages that include everything—just bring your crew and sense of adventure.
+      </p>
+
+      <p><strong>Let your next family memory be made at sea. 🌊</strong></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
