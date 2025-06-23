@@ -1,100 +1,310 @@
-<!doctype html>
+new code about uska        <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us | Boat Info Hub</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* Color Scheme */
+    :root {
+      --primary-navy: #003459;
+      --accent-seagreen: #2e8b8b;
+      --light-bg: #f8f9fa;
+      --text-dark: #1a1a1a;
+      --text-light: #ffffff;
+    }
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    </head>
-    <style>
-        
-        
-  body {
-    background-image: url(pictures/home\ page\ 2.jpg);
-    background-image: co;
-  }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--text-dark);
+      background-color: var(--light-bg);
+    }
 
-  .logo-img {
-    height: 60px; 
-    width: auto;  
-  }
-</style>
+    /* Hero section */
+    .hero-section {
+      background: url('https://media.istockphoto.com/id/1978588900/photo/aerial-view-of-sea-blue-waters-and-coast-of-brighton-east-sussex-uk.webp?a=1&b=1&s=612x612&w=0&k=20&c=L5gC0QMcbSzUmvFNbQyoNcAzlXiCwoe9Ea6R_xdFJ00=')
+        center/cover no-repeat;
+      color: var(--text-light);
+      padding: 100px 0;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards ease-in-out;
+    }
 
-    </style>
+    .overlay {
+      background-color: rgba(4, 36, 59, 0.7); /* Navy overlay */
+      padding: 50px;
+      opacity: 0;
+      animation: fadeIn 2s forwards ease-in-out;
+      animation-delay: 0.5s;
+    }
 
-    <body>
-        
-        <div class="navbar">
-            <nav
-                class="navbar navbar-expand-sm navbar-light "
-            >
-                <div class="container">
-                    <div class="logo">
-                    <a class="navbar-brand" href="#"><img src="pictures/logo-removebg-preview.png" alt="Logo" class="logo-img"></a>
+    h1, h2 {
+      color: var(--primary-navy);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Animate content fade & slide */
+    section.container h2,
+    section.container p,
+    section.container ul,
+    section.bg-light h2,
+    section.bg-light p {
+      opacity: 0;
+      animation: slideUp 1s forwards ease-out;
+    }
+
+    section.container h2 {
+      animation-delay: 0.3s;
+    }
+
+    section.container p {
+      animation-delay: 0.5s;
+    }
+
+    section.container ul {
+      animation-delay: 0.7s;
+    }
+
+    section.bg-light h2 {
+      animation-delay: 0.3s;
+    }
+
+    section.bg-light p {
+      animation-delay: 0.5s;
+    }
+
+    /* Stagger list items fade-in */
+    section.container ul li  {
+      opacity: 0;
+      animation: fadeIn 0.8s forwards ease-in-out;
+    }
+
+    section.container ul li :nth-child(1) {
+      animation-delay: 0.8s;
+    }
+
+    section.container ul li :nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    section.container ul li :nth-child(3) {
+      animation-delay: 1.2s;
+    }
+
+    section.container ul li :nth-child(4) {
+      animation-delay: 1.4s;
+    }
+
+    /* Image hover zoom */
+    .img-fluid {
+      transition: transform 0.4s ease;
+      cursor: pointer;
+    }
+
+    .img-fluid:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Footer fade in */
+    footer {
+      opacity: 0;
+      animation: fadeIn 2s forwards ease-in-out;
+      animation-delay: 2s;
+    }
+
+    /* Background sections */
+    section.bg-light {
+      background-color: var(--light-bg);
+    }
+
+    /* Accent styling */
+    .btn-seagreen {
+      background-color: var(--accent-seagreen);
+      color: white;
+      border: none;
+    }
+
+    .btn-seagreen:hover {
+      background-color: #226a6a;
+    }
+
+    ul li ::marker {
+      color: var(--accent-seagreen);
+    }
+    p{
+        color:  #003d60;
+    }
+    /* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #003355;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Nav list styling */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+.nav-list li {
+  position: relative;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+  display: block;
+}
+
+.nav-list a:hover {
+  background-color: #005577;
+  border-radius: 4px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #004466;
+  top: 48px;
+  min-width: 180px;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-align: left;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #006699;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+  </style>
+</head>
+ <header>
+  
+<div class="navbar">
+<nav
+class="navbar navbar-expand-sm navbar-light ">
+<div class="container">
+<div class="logo">
+<a class="navbar-brand" href="#"><img src="pictures/logo-removebg-preview.png" alt="Logo" class="logo-img"></a>
 </div>
-                    <button
-                        class="navbar-toggler d-lg-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId"
-                        aria-controls="collapsibleNavId"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="home.html" 
-                                    >Home
-                                    </a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="gallery.html">our gallery</a>
-                            </li>
-                             <li class="nav-item">
-                                <a class="nav-link" href="contactus.html">contact us at</a>
-                            </li>
-                             <li class="nav-item">
-                                <a class="nav-link" href="about.html" aria-current="page">about us <span class="visually-hidden">(current)</span></a>
-                            </li>
-                           
-                            </li>
-                        </ul>
-                       
-                    </div>
-                </div>
-            </nav>
-            
-        </div>
+<button
+class="navbar-toggler d-lg-none"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#collapsibleNavId"
+aria-controls="collapsibleNavId"
+aria-expanded="false"
+aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="collapsibleNavId">
+<ul class="navbar-nav me-auto mt-2 mt-lg-0">
+<li class="nav-item"> <a class="nav-link active" href="home.html" >Home<span class="visually-hidden">(current)</span> </a></li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">our gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="contactus.html">contact us at</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html" aria-current="page">about us <span class="visually-hidden">(current)</span></a></li>
+</li>
+</ul>
+</div></div>
+</nav>
+</div>
         
+ 
+  </header>
 
-        
-       
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+<body style="background-color: #ccf0f0;">
+  <!-- Hero Section -->
+  <section class="hero-section" style="margin: 30px; border: solid;">
+    <div class="overlay" >
+      <h1 class="display-4" style="color: #f8f9fa;">About Marine Fleet</h1>
+      <p class="lead" style="color: #f8f9fa;">Your trusted source for marine fleet insights, data, and developments</p>
+    </div>
+  </section>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+  <!-- About Content -->
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <img
+          src="one.jpg"
+          alt="Boat Info Hub"
+          class="img-fluid rounded shadow"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-md-6 d-flex flex-column justify-content-center">
+        <h2>Who We Are</h2>
+        <p>
+          Boat Info Hub is a leading platform dedicated to providing comprehensive and up-to-date information for maritime professionals, fleet managers, and marine industry stakeholders. We specialize in delivering reliable data, expert insights, and operational guidance to support efficient marine fleet management — whether in commercial shipping, offshore services, or private maritime operations.
+        </p>
+        <ul>
+          <li style="     color:  #003d60;">Professional insights on fleet operations and lifecycle management</li >
+          <li  style="     color:  #003d60;">In-depth vessel specifications, comparisons, and performance analytics</li >
+          <li  style="     color:  #003d60;">Timely coverage of maritime regulations, compliance, and innovations</li >
+          <li  style="     color:  #003d60;">Industry case studies, expert interviews, and community knowledge exchange</li >
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="bg-light py-5" style="box-shadow: #1a1a1a;">
+    <div class="container" style="background-color: #ccf0f0;">
+      <h2>Our Mission</h2>
+      <p>
+        To empower the marine industry with accurate, actionable, and trustworthy fleet-related content. We believe marine operations shape the backbone of global logistics — and we're here to support smarter decision-making at every nautical mile.
+      </p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

@@ -3,29 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> OUR GALLERY</title>
+  <title>Gallery Scroll Fade</title>
 
-  
+  <!-- ✅ Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <style>
-     body {
-    background-image: url(pictures/home\ page\ 2.jpg);
-    background-image: co;
-  }
-
-  .logo-img {
-    height: 60px;
-    width: auto; 
-  }
     .card-img-top {
-      height: 90px;
+      height: 200px;
       object-fit: cover;
-      object-position: center center;}
+    }
+    .parent{
+     background-image: url(pictures/photo-1559825481-12a05cc00344.avif);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 
-      
-    
+    }
+.container{
+  
+  padding: 10% ;
+  border: solid;
+  border-color: rgb(198, 222, 249);
+  border-radius: 20px;
+  opacity: inherit;
 
+}
     .card {
       opacity: 0;
       transform: translateY(30px);
@@ -39,109 +42,44 @@
   </style>
 </head>
 <body>
- <nav
-  class="navbar navbar-expand-sm navbar-light "
- >
-  <div class="container">
-    <a class="navbar-brand  " href="#"><img class="card-img-top" src="pictures copy/logo-removebg-preview.png" alt=""></a>
-    <button
-      class="navbar-toggler d-lg-none"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#collapsibleNavId"
-      aria-controls="collapsibleNavId"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-      <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="#" aria-current="page"
-            >Home
-            <span class="visually-hidden">(current)</span></a
-          >
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="#">gallery section</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">about us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">contact us at</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><button>login</button></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#"><button>sign in</button></a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="dropdownId"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >more</a
-          >
-          <div
-            class="dropdown-menu"
-            aria-labelledby="dropdownId"
-          >
-            <a class="dropdown-item" href="#"
-              >feed back</a
-            >
-            <a class="dropdown-item" href="#"
-              >blogs</a
-            >
-          </div>
-        </li>
-      </ul>
-     
-    </div>
-  </div>
- </nav>
- 
+  <div class="parent">
+       <h2 class="text-center mb-5">gallery </h2>
   <div class="container py-5">
-    <h2 class="text-center mb-5">Scroll Fade Gallery</h2>
+ 
     <div class="row g-4">
 
-      
-      
+     
 
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img1.jpg" target="_blank"><img src="pictures/cruise ship 2.jpg" class="card-img-top" alt="Image 1"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img2.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 2"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img3.jpg" target="_blank"><img src="pictures/yacht.jpg" class="card-img-top" alt="Image 3"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img4.jpg" target="_blank"><img src="pictures/fish boat.jpg" class="card-img-top" alt="Image 4"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img5.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 5"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img6.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 6"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img7.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 7"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img8.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 8"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img9.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 9"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img10.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 10"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img11.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 11"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img12.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 12"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img13.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 13"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img14.jpg" target="_blank"><img src=" pictures/cruise ship.jpg" class="card-img-top" alt="Image 14"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img15.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 15"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img16.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 16"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img17.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 17"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img18.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 19"></a></div></div>
-      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img20.jpg" target="_blank"><img src="pictures/cruise ship.jpg" class="card-img-top" alt="Image 20"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img1.jpg" target="_blank"><img src="pictures/photo-1533738870554-3016c973efbe.avif" class="card-img-top" alt="Image 1"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img2.jpg" target="_blank"><img src="pictures/istockphoto-1319994596-612x612.jpg" class="card-img-top" alt="Image 2"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img3.jpg" target="_blank"><img src="pictures/photo-1503634192480-e77a6436f075.avif" class="card-img-top" alt="Image 3"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img4.jpg" target="_blank"><img src="pictures/photo-1517217004452-4ff260cb5598.avif" class="card-img-top" alt="Image 4"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img5.jpg" target="_blank"><img src="pictures/photo-1552160757-52790c6f4faf.avif" class="card-img-top" alt="Image 5"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img6.jpg" target="_blank"><img src="pictures/photo-1605281317010-fe5ffe798166.avif" class="card-img-top" alt="Image 6"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img7.jpg" target="_blank"><img src="pictures/premium_photo-1663945778595-57a9bd1f2f54.avif" class="card-img-top" alt="Image 7"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img8.jpg" target="_blank"><img src="pictures/photo-1512075471992-40e98d128c63.avif" class="card-img-top" alt="Image 8"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img9.jpg" target="_blank"><img src="pictures/istockphoto-1339057752-612x612.webp" class="card-img-top" alt="Image 9"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img10.jpg" target="_blank"><img src="pictures/istockphoto-162324941-612x612.webp" class="card-img-top" alt="Image 10"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img11.jpg" target="_blank"><img src="pictures/istockphoto-1874145838-612x612.jpg" class="card-img-top" alt="Image 11"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img12.jpg" target="_blank"><img src="pictures/istockphoto-2170148433-612x612.webp" class="card-img-top" alt="Image 12"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img13.jpg" target="_blank"><img src="pictures/istockphoto-1405559968-612x612.webp" class="card-img-top" alt="Image 13"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img14.jpg" target="_blank"><img src="pictures/photo-1527431293370-0cd188ca5d15.avif" class="card-img-top" alt="Image 14"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img15.jpg" target="_blank"><img src="pictures/photo-1503634192480-e77a6436f075.avif" class="card-img-top" alt="Image 15"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img16.jpg" target="_blank"><img src="pictures/photo-1444487233259-dae9d907a740.avif" class="card-img-top" alt="Image 16"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img17.jpg" target="_blank"><img src="pictures/photo-1683119825786-9c0dcad1c959.avif"  class="card-img-top" alt="Image 17"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img18.jpg" target="_blank"><img src="pictures//photo-1680274923336-f3b222cfdd7d.avif" class="card-img-top" alt="Image 18"></a></div></div>
+      <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img19.jpg" target="_blank"><img src="pictures/photo-1569263979104-865ab7cd8d13.avif" class="card-img-top" alt="Image 19"></a></div></div>
 
+            <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img20.jpg" target="_blank"><img src="pictures/istockphoto-688928992-612x612.webp" class="card-img-top" alt="Image 20"></a></div></div>
+  <div class="col-md-4 col-sm-6"><div class="card"><a href="images/img20.jpg" target="_blank"><img src="pictures/istockphoto-1874145838-612x612.jpg" class="card-img-top" alt="Image 20"></a></div></div>
     </div>
   </div>
+  </div>
 
-  
+  <!-- ✅ Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
- 
+  <!-- ✅ Scroll fade animation -->
   <script>
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {

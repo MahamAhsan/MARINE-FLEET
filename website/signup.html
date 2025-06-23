@@ -73,5 +73,20 @@
       alert("Registration successful!");
     }
   </script>
+  <script>function VisitorCounter() {
+      var count = parseInt(localStorage.getItem('counter')) || 0;
+      count++;
+      localStorage.setItem('counter', count)
+      document.getElementById('VisitorCounter').innerText = "Visitor Counter: " + count;
+    }
+    VisitorCounter()</script>
+    <div class="row text-center align-items-center">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <p id="livetime" class="fs-2 mb-0">00:00:00</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <p id="VisitorCounter" class="fs-2 mb-0">Visitor Counter: </p>
+        </div>
+      </div>
 </body>
 </html>
