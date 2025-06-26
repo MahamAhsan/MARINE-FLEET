@@ -72,16 +72,40 @@
 
   <!-- Optional JS for login -->
   <script>
-    function login() {
-      var email = document.getElementById('email').value;
-      var password = document.getElementById('password').value;
-      if (localStorage.getItem('Email') == email && localStorage.getItem('Password') == password) {
-        localStorage.setItem('ticket', 123);
-        window.location.href = 'details.html';
-      } else {
-        alert('Email and password are incorrect');
-      }
+   
+  function login() {
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+
+    // Get saved credentials
+    const savedEmail = localStorage.getItem('Email');
+    const savedPassword = localStorage.getItem('Password');
+
+    // Validate input
+    if (!email || !password) {
+      alert("Please enter both email and password.");
+      return;
     }
+
+    if (email === savedEmail && password === savedPassword) {
+      sessionStorage.setItem('loggedIn', true);
+      window.location.href = 'gallery.html';
+    } else {
+      alert('Email and password are incorrect');
+    }
+  }
+
+
+
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
